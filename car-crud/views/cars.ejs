@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Management</title>
+  <link rel="stylesheet" href="/cars.css">
+  <link rel="Shortcut Icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <h1>Car Management</h1>
+      <h2>Add a New Car</h2>
+      <form action="/cars" method="POST">
+        <input type="text" name="name" placeholder="Car Name" required>
+        <input type="number" name="year" placeholder="Manufacturing Year" required>
+        <input type="number" step="0.01" name="price" placeholder="Price" required>
+        <button type="submit">Add Car</button>
+      </form>
+
+      <h2>Car List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Car Name</th>
+            <th>Manufacturing Year</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% cars.forEach(car=> { %>
+            <tr>
+              <td>
+                <%= car.id %>
+              </td>
+              <td>
+                <%= car.name %>
+              </td>
+              <td>
+                <%= car.year %>
+              </td>
+              <td>
+                <%= car.price %>
+              </td>
+              <td>
+                <form action="/cars/edit/<%= car.id %>" method="GET" style="display:inline;">
+                  <button type="submit">Edit</button>
+                </form>
+                <form action="/cars/delete/<%= car.id %>" method="POST" style="display:inline;">
+                  <button type="submit">Delete</button>
+                </form>
+              </td>
+            </tr>
+            <% }) %>
+        </tbody>
+      </table>
+      <a href="/logout">Logout</a>
+      <a href="/dashboard">Go to Dashboard</a>
+    </div>
+  </div>
+</body>
+
+</html>

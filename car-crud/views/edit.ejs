@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Car</title>
+  <link rel="stylesheet" href="/edit.css">
+  <link rel="Shortcut Icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <h1>Edit Car</h1>
+      <form action="/cars/edit/<%= car.id %>" method="POST">
+        <input type="text" name="name" value="<%= car.name %>" required>
+        <input type="number" name="year" value="<%= car.year %>" required>
+        <input type="number" step="0.01" name="price" value="<%= car.price %>" required>
+        <button type="submit">Update Car</button>
+      </form>
+      <a href="/cars">Back to Car List</a>
+    </div>
+  </div>
+</body>
+
+</html>

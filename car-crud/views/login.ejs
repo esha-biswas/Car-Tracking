@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Assignment for Quadiro Technologies</title>
+  <link rel="stylesheet" href="/login.css">
+  <link rel="Shortcut Icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="background">
+      
+      <h1>Assignment for Quadiro Technologies</h1>
+      <img src="logo.png" alt="">
+      <h2>Log-in</h2>
+
+      <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <% if (message) { %>
+        <p style="color: red;">
+          <%= message %>
+        </p>
+        <% } %>
+          <a href="/signup">Don't have an account? Signup</a>
+    </div>
+    
+  </div>
+</body>
+
+</html>

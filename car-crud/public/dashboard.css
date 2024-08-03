@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&display=swap');
+body{
+    margin: 0;
+    height: 100%;
+    font-size: large;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+h1{
+  font-size: 50px;
+  font-weight:bolder;
+}
+
+
+
+.background{
+  background-image: url("1.jpg"),url("bv.png"),url("c.jpg"),url("h.jpg"),url("d.jpg"),url("b.jpg"),url("g.jpg"),url("a.jpg"),url("m.jpg"),url("z.jpg"),url("k.jpg"), url("l.jpg"),url("o.jpg"),url("n.jpg"),url("lm.jpg"), url("gh.jpg"), url("jn.jpg"), url('nm.jpg'), url("gc.jpg");
+  background-size: 200px ;
+  background-position: 0% 0%, 1% 45%, 0% 95%, 20% 70%, 20% 100%, 20% 5%, 40% 98%, 40% 45%, 40% 0%, 60% 3%, 60% 30%,  60% 100%, 80% 0%, 80% 45%, 80% 98%, 100% 110%, 100% 60%, 100% 32%, 100% 1%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(30, 29, 28);
+}
+
+.container{
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: rgb(119, 115, 115);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2b2d2f;
+}

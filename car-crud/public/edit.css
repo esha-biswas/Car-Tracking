@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    height: 100%;
+    font-size: large;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+
+.background {
+    background-image: url("3.webp");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: bisque;
+}
+
+.container {
+    padding-left: 200px;
+    padding-top: 150px;
+}
+
+button {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+input {
+    opacity: 0.5;
+    color: black;
+}
+
+
+a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 15px;
+    background-color: rgb(119, 115, 115);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2b2d2f;
+}

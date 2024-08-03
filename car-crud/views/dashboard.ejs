@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/dashboard.css">
+  <link rel="Shortcut Icon" type="image/png" href="logo.png">
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <h1>Car Dashboard</h1>
+      <p>Total Number of Cars: <%= totalCars %>
+      </p>
+      <a href="/cars">Manage Cars</a>
+      <h2>Car List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Car Name</th>
+            <th>Manufacturing Year</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% cars.forEach(car=> { %>
+            <tr>
+              <td>
+                <%= car.id %>
+              </td>
+              <td>
+                <%= car.name %>
+              </td>
+              <td>
+                <%= car.year %>
+              </td>
+              <td>
+                <%= car.price %>
+              </td>
+            </tr>
+            <% }) %>
+        </tbody>
+      </table>
+
+      <a href="/logout">Logout</a>
+
+    </div>
+  </div>
+</body>
+
+</html>
